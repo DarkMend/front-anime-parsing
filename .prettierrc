@@ -1,0 +1,23 @@
+{
+  "useTabs": false,
+  "tabWidth": 2,
+  "printWidth": 100,
+  "jsxSingleQuote": true,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "singleQuote": true,
+  "semi": true,
+  "bracketSameLine": false,
+  "arrowParens": "always",
+  "endOfLine": "auto",
+
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "^@/(\\.{1,2}/?)*[^.]+$",
+    "^(\\.{1,2}/?)+[^\\.]*$",
+    "\\.(jpg|png|webp|svg)",
+    "\\.s?css$"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}
