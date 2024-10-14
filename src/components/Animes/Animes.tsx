@@ -1,10 +1,10 @@
 "use client"
 
+import { useGetAnimes } from "@/services/Animes/hooks/getAnimes";
 import Anime from "./Anime/Anime";
-import { useGetAnimes } from "@/services/Anime/hooks/getAnimes";
 
 const Animes = () => {
-    const {data: animes, isPending} = useGetAnimes({start_from_page: '2'})    
+    const {data: animes, isPending} = useGetAnimes({start_from_page: '1'}, {staleTime: 1000 * 60 * 60})    
 
     if(isPending) return <div>Loading</div>    
 

@@ -1,4 +1,4 @@
-import Animes from "./components/Animes/Animes";
+import Animes from "@/components/Animes/Animes";
 
 export default function Home() {
   return (
